@@ -38,7 +38,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Git repo url](https://github.com/Plut0r/loopstudio)
-- Live Site URL: [Git live url]()
+- Live Site URL: [Git live url](https://plut0r.github.io/loopstudio/)
 
 
 ### Built with
