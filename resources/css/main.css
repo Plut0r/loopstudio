@@ -1,0 +1,294 @@
+/* color variables */
+:root {
+   --white: hsl(0, 0%, 100%);
+   --transparent-white: hsl(0, 0%, 82%);
+   --transparent-white2: hsl(0, 0%, 90);
+   --black: hsl(0, 0%, 0%);
+   --dark-gray: hsl(0, 0%, 55%);
+   --very-dark-gray: hsl(0, 0%, 41%);
+}
+/* base properties */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Alata', sans-serif;
+    /* font-family: 'Josefin Sans', sans-serif; */
+    background-color: var(--white);
+}
+ .nav-link:hover {
+    text-decoration: underline;
+ }
+span {
+    color: var(--dark-gray);
+}
+.container-2 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+h2 {
+    text-transform: uppercase;
+    color: var(--black);
+}
+.card-div-text {
+    color: var(--very-dark-gray);
+    font-weight: bolder;
+}
+h3 {
+    text-transform: uppercase;
+}
+
+/* for larger screens */
+@media screen and (min-width: 900px) {
+    .mobile-image {
+    display: none;
+   }
+   .container-1 {
+    background-image: url("../images/desktop/image-hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+h1 {
+   font-size: 4rem;
+}
+h3 {
+   margin-left: 40px;
+}
+.navbar-brand {
+    padding-left: 140px;
+    padding-top: 30px;
+ }
+ .nav {
+    padding-top: 30px;
+    margin-left: 450px;
+ }
+ .container-1-b {
+   border: 2px solid var(--dark-gray);
+   width: 550px;
+   margin-left: 140px;
+   margin-top: 150px;
+   padding-left: 20px;
+   padding-top: 20px;
+   padding-bottom: 10px;
+   padding-right: 30px;
+   display: flex;
+   color: var(--transparent-white);
+   text-transform: uppercase;
+   font-family: 'Josefin Sans', sans-serif;
+}
+ .interactive-img {
+    width: 500px;
+    position: absolute;
+    margin-left: -150px;
+ }
+ .container-2 {
+   display: flex;
+    justify-content: center;
+    margin-top: 100px;
+ }
+ .card-div {
+   width: 500px;
+   margin-top: 100px;
+   margin-left: 500px;
+   padding-top: 40px;
+   padding-left: 70px;
+   padding-right: 50px;
+   position: relative;
+   z-index: 30;
+   background-color: var(--white);
+   height: 250px;
+}
+.container-3 {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 100px;
+   color: var(--black);
+   font-family: 'Josefin Sans', sans-serif;
+   padding-bottom: 30px;
+} 
+ .container-4, .container-5 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+ }
+ .mobile-btn {
+   display: none;
+ }
+ .see-btn {
+   margin-right: 40px;
+   outline: none;
+   border: none;
+   border: 2px solid var(--dark-gray);
+   background-color: var(--white);
+   text-transform: uppercase;
+   font-weight: bold;
+   padding: 5px 20px;
+}
+.see-btn:hover {
+   background-color: var(--black);
+   color: var(--white);
+}
+ .arcade-div, .soccer-div, .grid-div, .earth-div, .up-div, .pocket-div, .curiosity-div, .fisheye-div {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 60vh;
+    margin-right: 20px;
+ }
+ .arcade-div:hover, .soccer-div:hover, .earth-div:hover, .pocket-div:hover, .curiosity-div:hover, .grid-div:hover, .up-div:hover, .fisheye-div:hover {
+   opacity: 0.4;
+   cursor: pointer;
+ }
+ 
+ .earth-div {
+    background-image: url("../images/desktop/image-deep-earth.jpg");
+    position: relative;
+ }
+ .earth-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: var(--white);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    width: 25%;
+ }
+ .arcade-div {
+    background-image: url("../images/desktop/image-night-arcade.jpg");
+    position: relative;
+ }
+ .arcade-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: var(--white);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    width: 25%;
+ }
+ .soccer-div {
+    background-image: url("../images/desktop/image-soccer-team.jpg");
+    position: relative;
+ }
+ .soccer-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: var(--white);
+    padding-left: 15px;
+    padding-bottom: 15px;
+    width: 75%;
+ }
+ .grid-div {
+    background-image: url("../images/desktop/image-grid.jpg");
+    position: relative;
+ }
+ .grid-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: var(--white);
+    padding-left: 20px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    width: 25%;
+ }
+ .up-div {
+    background-image: url("../images/desktop/image-from-above.jpg");
+    position: relative;
+ }
+ .up-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: var(--white);
+    padding-left: 20px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    width: 85%;
+ }
+ .pocket-div {
+    background-image: url("../images/desktop/image-pocket-borealis.jpg");
+    position: relative;
+ }
+ .pocket-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: var(--white);
+    padding-left: 20px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    width: 25%;
+ }
+ .curiosity-div {
+    background-image: url("../images/desktop/image-curiosity.jpg");
+    position: relative;
+ }
+ .curiosity-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: var(--white);
+    padding-left: 20px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    width: 25%;
+ }
+ .fisheye-div {
+    background-image: url("../images/desktop/image-fisheye.jpg");
+    position: relative;
+ }
+ .fisheye-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: var(--white);
+    padding-left: 20px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    width: 85%;
+ }
+ footer {
+   display: flex;
+   justify-content: space-between;
+   background-color: var(--black);
+   margin-top: 100px;
+   padding-top: 50px;
+   padding-bottom: 50px;
+ }
+ .footer-item {
+   display: inline-flex;
+   padding-right: 20px;
+ }
+ .footer-link {
+   color: var(--white);
+   text-decoration: none;
+ }
+ .footer-link:hover {
+   text-decoration: underline;
+   color: var(--white);
+ }
+ .footer-logo {
+   margin-left: 33px;
+   margin-bottom: 20px;
+ }
+ .icon-div {
+   margin-bottom: 30px;
+ }
+ .icon-facebook, .icon-instagram, .icon-twitter, .icon-pinterest {
+   padding-right: 10px;
+ }
+ .footer-text {
+   color: var(--white);
+   font-family: 'Josefin Sans', sans-serif;
+   margin-right: 40px;
+
+ }
+}
